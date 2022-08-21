@@ -1,12 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera pagina</title>
-</head>
-<body>
-    
-</body>
+<!--Define que el documento es HTML-->
+<html lang="en"><!--Se coloca el lenguaje en el que se va a trabajar-->
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>My Blog</title> <!--Coloca nombre en la pestaña del navegador -->
+        <meta name="description" content="Este es mi primer sitio web"/> <!--meta es para darle informacion al navegador y poder encontrar la pagina mas sencilo-->
+        <meta name="author" content="Cristian Gonzalez"/>
+        <meta name="keywords" content="mi primera pagina web, blog, pagina web, web"/>
+    </head>
+
+    <body>
+        <header>
+            <h1>Mi Blog</h1> <!--Titulo de la pagina web-->
+        </header>        
+
+        <nav><!--Indica que es un panel de navegacion-->
+            <ul>
+                <li>Princpial</li>
+                <li>Ayuda</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+
+        <section>
+            <article>
+                <hgroup> <!--agrupa para dar jerarquia-->
+                    <h2>Titulo del primer articulo</h2>
+                    <h3>Subtitulo del primer articulo</h3>
+                </hgroup>
+                <time datetime="21/08/2022"><b><i><small>publicado 21/08/2022</small></i></b></time> <!--b: coloca negrita i: coloca cursiva small: reduce la letra-->
+                <p>Contrary <small>to popular belief</small> , Lorem <cite>Ipsum</cite>  is not <span>simply random text</span> . It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p> <!--Sirve para definir parrafos-->
+                
+                <img src="image/ho.jpg" height="150" alt="Este es el logo">
+                <footer>Comentarios (0)</footer>
+
+                <address>
+                    <a href="https://github.com/cristiansgonzalez">Github Cristian Gonzalez</a>
+                    <br>
+                    <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_blank">Wikipedia</a>
+                </address>
+
+            </article>
+
+            <article>
+                <hgroup>
+                    <h2>Titulo del segundo articulo</h2>
+                    <h3>Subtitulo del segundo articulo</h3>
+                </hgroup>                
+                <time datetime="20/08/2022"><b><i><small>publicado 20/08/2022</small></i></b></time> <!--b: coloca negrita i: coloca cursiva small: reduce la letra-->
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p> <!--Sirve para definir parrafos-->
+                <footer>Comentarios (10)</footer>
+            </article>
+        </section>
+
+        <aside>
+            <blockquote cite="https://es.wikipedia.org/wiki/Wikipedia:Portada">
+                Mensaje 1
+            </blockquote>
+
+            <blockquote cite="https://github.com/cristiansgonzalez">
+                Mensaje 2
+            </blockquote>
+        </aside>
+
+        <footer>
+            <p>Todos los derechos reservado &copy; 2022 por Cristian Gonzalez </p>
+        </footer>
+
+    </body>
 </html>
